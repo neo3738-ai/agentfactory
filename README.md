@@ -8,15 +8,21 @@ Agentfactory is a desktop app for creating multi-agent AI workflows. Design pipe
 
 - **Visual Pipeline Builder** — Drag-and-drop agent pipelines with multi-step workflows
 - **Agent Blueprints** — Create reusable agents with custom roles, tools, and system prompts
-- **Marketplace** — Browse and install 52+ community template packs with one click
+- **Marketplace** — Browse and install 160+ community template packs with one click
 - **Council System** — Multi-agent debate, voting, and judge arbitration for better decisions
-- **Council Presets** — 6 pre-built councils (Writing, Code Review, Decision, Research, Creative, Strategy) — one click to create
+- **Council Presets** — 12 pre-built councils (Writing, Code Review, Decision, Research, Creative, Strategy, Automation, Business, Data, Content, Finance) — one click to create
 - **Smart Intake** — Describe what you want in plain English, get a ready-to-run pipeline
 - **Conversation Mode** — Continue chatting with your pipelines after they run
 - **Markdown Output** — Agent responses rendered with full formatting (headings, code blocks, lists, tables)
 - **Memory System** — Agents remember context across runs using vector embeddings
+- **Knowledge Bases** — Organize memories into named collections for better retrieval
+- **Memory Explorer** — Filter, pin, bulk-manage, and search agent memories
+- **Inline Tune Panel** — Adjust model, temperature, max tokens, and system prompt on the fly
+- **Quick-Tune Presets** — One-click creative, precise, verbose, or concise modes
+- **A/B Compare** — Run two configurations side-by-side and pick the winner
+- **Blueprint Versioning** — Auto-snapshot blueprints before tuning changes
 - **Factory Floor** — Monitor all running agents in real-time
-- **Workbench** — Quick one-shot agent interactions
+- **Workbench** — Quick one-shot agent interactions with memory preview
 - **Multiple API Backends** — Works with Ollama (local), OpenRouter, LM Studio, OpenAI, and any OpenAI-compatible endpoint
 - **Export & Share** — Export your pipelines as templates for others to use
 - **Scheduled Runs** — Set pipelines to run on a cron schedule
@@ -28,20 +34,17 @@ Go to the [Releases](https://github.com/neo3738-ai/agentfactory/releases) page a
 
 | Platform | File |
 |----------|------|
-| **Linux** | `agentfactory-v0.3.0-linux.tar.gz` (tar.gz with installer) |
-| **Windows** | `agentfactory.exe` (standalone binary) |
+| **Linux** | `agentfactory-v0.3.1-linux-x86_64.tar.gz` |
+| **Windows** | `agentfactory-v0.3.1-windows-x86_64.zip` |
 
 ### Linux Installation
 
 ```bash
 # Download and extract
-tar xzf agentfactory-v0.3.0-linux.tar.gz
-cd agentfactory-v0.3.0-linux
+tar xzf agentfactory-v0.3.1-linux-x86_64.tar.gz
+cd agentfactory-v0.3.1-linux
 
-# Option 1: Run the installer
-bash install.sh
-
-# Option 2: Run directly
+# Run directly
 chmod +x agentfactory
 ./agentfactory
 ```
@@ -53,7 +56,7 @@ sudo apt install libwebkit2gtk-4.1-0
 
 ### Windows Installation
 
-Download `agentfactory.exe` and run it. No installation needed.
+Download and extract `agentfactory-v0.3.1-windows-x86_64.zip`, then run `agentfactory.exe`. No installation needed.
 
 **Requirements:** WebView2 runtime (comes pre-installed on Windows 10/11).
 
@@ -77,7 +80,7 @@ Agentfactory works with any OpenAI-compatible API:
 
 ## Community Templates
 
-Browse 52+ pre-built templates in the Marketplace tab, organized into packs:
+Browse 160+ pre-built templates in the Marketplace tab, organized into 10 packs:
 
 - **Information & News** — News briefings, deep research, Reddit summaries, site monitoring
 - **Content Creation** — Blog posts, emails, stories, newsletters, social media
@@ -87,6 +90,8 @@ Browse 52+ pre-built templates in the Marketplace tab, organized into packs:
 - **Finance & Money** — Budget analysis, stock research, price tracking, crypto
 - **Learning & Study** — Study guides, flashcards, topic deep-dives, tutoring
 - **Data & Analysis** — CSV analysis, log parsing, SEO auditing
+- **Automation** — Workflow automation, scheduling, monitoring, notifications
+- **Business** — Business planning, marketing, HR, customer service
 
 Want to contribute a template? Visit [agentfactory-templates](https://github.com/neo3738-ai/agentfactory-templates).
 
