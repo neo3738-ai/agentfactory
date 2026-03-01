@@ -9,8 +9,11 @@ Agentfactory is a desktop app for creating multi-agent AI workflows. Design pipe
 - **Visual Pipeline Builder** — Drag-and-drop agent pipelines with multi-step workflows
 - **Agent Blueprints** — Create reusable agents with custom roles, tools, and system prompts
 - **Marketplace** — Browse and install 52+ community template packs with one click
-- **Council System** — Multi-model debate and consensus for better decisions
+- **Council System** — Multi-agent debate, voting, and judge arbitration for better decisions
+- **Council Presets** — 6 pre-built councils (Writing, Code Review, Decision, Research, Creative, Strategy) — one click to create
 - **Smart Intake** — Describe what you want in plain English, get a ready-to-run pipeline
+- **Conversation Mode** — Continue chatting with your pipelines after they run
+- **Markdown Output** — Agent responses rendered with full formatting (headings, code blocks, lists, tables)
 - **Memory System** — Agents remember context across runs using vector embeddings
 - **Factory Floor** — Monitor all running agents in real-time
 - **Workbench** — Quick one-shot agent interactions
@@ -25,13 +28,20 @@ Go to the [Releases](https://github.com/neo3738-ai/agentfactory/releases) page a
 
 | Platform | File |
 |----------|------|
-| **Linux** | `agentfactory` (standalone binary) |
+| **Linux** | `agentfactory-v0.3.0-linux.tar.gz` (tar.gz with installer) |
 | **Windows** | `agentfactory.exe` (standalone binary) |
 
 ### Linux Installation
 
 ```bash
-# Download the binary
+# Download and extract
+tar xzf agentfactory-v0.3.0-linux.tar.gz
+cd agentfactory-v0.3.0-linux
+
+# Option 1: Run the installer
+bash install.sh
+
+# Option 2: Run directly
 chmod +x agentfactory
 ./agentfactory
 ```
