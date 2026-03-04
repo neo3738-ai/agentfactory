@@ -23,7 +23,7 @@ Go to the [Releases](https://github.com/neo3738-ai/agentfactory/releases) page a
 
 ## Community Templates
 
-160+ templates available in the Marketplace. Contribute your own at [agentfactory-templates](https://github.com/neo3738-ai/agentfactory-templates).
+160+ templates available in the Marketplace. Share your own pipelines, agents, and councils directly from the app — uploads go to [agentfactory-templates](https://github.com/neo3738-ai/agentfactory-templates) as a pull request.
 
 ## Issues
 
