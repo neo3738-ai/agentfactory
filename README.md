@@ -1,30 +1,34 @@
-# Agentfactory
+# AgentFactory
 
-**Build, run, and share AI agent pipelines — no coding required.**
+AI agent pipeline builder — create, run, and automate multi-agent workflows powered by local Ollama models or any OpenAI-compatible endpoint.
 
-A desktop app for creating multi-agent AI workflows. Connect to any OpenAI-compatible API (Ollama, OpenRouter, LM Studio, OpenAI, etc).
+## Features
 
-## Download
+- **Agent pipelines** — chain multiple AI agents together with configurable steps and memory
+- **Daemon mode** — persistent background job queue via SQLite (`agentfactory --daemon`)
+- **HTTP bridge** (port 3849) — full async job management API for external integrations
+- **MCP server** — 13+ tools for AI assistant integration (works with Claude, NeoCode, etc.)
+- **Marketplace** — install and share agent pipeline templates
+- **Conductor integration** — connects with [Conductor](https://github.com/neo3738-ai/conductor) for project/task context
+- **Ollama resource scheduling** — `delay_seconds` and `af_await_job` prevent model conflicts
+- **Name-based dispatch** — reference agents and pipelines by name, no UUID needed
 
-Go to the [Releases](https://github.com/neo3738-ai/agentfactory/releases) page and grab the latest version.
+## Downloads
+
+See [Releases](https://github.com/neo3738-ai/agentfactory/releases) for the latest binaries.
 
 | Platform | File |
 |----------|------|
-| **Linux** | `.tar.gz` — extract and run |
-| **Windows** | `.zip` — extract and run |
+| Linux | `.tar.gz` standalone binary or `.deb` installer |
+| Windows | `.zip` archive or `.exe` installer |
 
-**Linux requires:** `sudo apt install libwebkit2gtk-4.1-0`
+## Requirements
 
-## Quick Start
+- [Ollama](https://ollama.com) running locally (or any OpenAI-compatible endpoint)
 
-1. Go to **Settings** and configure your AI backend
-2. Browse the **Marketplace** for ready-made templates
-3. Or use **Smart Intake** — describe what you want and go
+## Part of the Horizon AI Protocol suite
 
-## Community Templates
+Works great alongside [Conductor](https://github.com/neo3738-ai/conductor) and [RPE](https://github.com/neo3738-ai/rpe).
 
-160+ templates available in the Marketplace. Share your own pipelines, agents, and councils directly from the app — uploads go to [agentfactory-templates](https://github.com/neo3738-ai/agentfactory-templates) as a pull request.
-
-## Issues
-
-[Report issues here](https://github.com/neo3738-ai/agentfactory/issues).
+---
+Built by [Horizon AI Protocol](https://horizonaiprotocol.com)
